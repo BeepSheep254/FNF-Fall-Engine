@@ -1683,7 +1683,7 @@ class PlayState extends MusicBeatState
 					{
 						if (Math.abs(daNote.noteData) == spr.ID)
 						{
-							spr.animation.play('confirm');
+							spr.animation.play('confirm', true);
 							sustain2(spr.ID, spr, daNote);
 						}
 					});
@@ -1722,7 +1722,7 @@ class PlayState extends MusicBeatState
 			{
 				if (strumming2[spr.ID])
 				{
-					spr.animation.play("confirm");
+					spr.animation.play("confirm", true);
 				}
 
 				if (spr.animation.curAnim.name == 'confirm' && !curStage.startsWith('school'))
